@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.jpg" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/landing.css" />
+    <title>Quizzy | Welcome</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quizzy</h1>
+      <p class="description">
+        Quizzy is a quiz app, you can use it to test your public knowledge.
+      </p>
+      <p class="start-game">
+        <strong>How to start using Quizzy?</strong> <br />
+        Simply write your name, select a category, and select the number of
+        questions down below, then click the start button. After that, start
+        answering the MCQs.
+      </p>
+      <p class="note">
+        <i
+          >- Note: The higher your score, the higher your name will be in the
+          leaderboard.</i
+        >
+      </p>
+      <form>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <select name="category" id="category">
+          <option value="" selected>Select Category</option>
+          <option value="food_and_drink">Food and Drink</option>
+          <option value="geography">Geography</option>
+          <option value="general_knowledge">General Knowledge</option>
+          <option value="history">History</option>
+          <option value="literature">Art and Literature</option>
+          <option value="movies">Movies</option>
+          <option value="music">Music</option>
+          <option value="science">Science</option>
+          <option value="society_and_culture">Society and Culture</option>
+          <option value="sport_and_leisure">Sport and Leisure</option>
+        </select>
+        <label for="limit">Number of Questions</label>
+        <input
+          type="range"
+          id="limit"
+          name="limit"
+          value="10"
+          min="2"
+          max="20"
+          step="2"
+        />
+        <div class="questions-limit">10 Questions</div>
+        <input type="submit" value="Start" />
+      </form>
+    </div>
+    <script src="./js/landing.js"></script>
+  </body>
+</html>
