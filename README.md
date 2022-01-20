@@ -9,7 +9,7 @@
 - [Developer](#dev)
 
 ## 🤖 Live Demo <span id="demo"></span>
-Try Quizzy **[Here](https://zaher-aa.github.io/Quizzy)**
+Try Quizzy **[Here](https://gsg-g11.github.io/Quizzy/)**
 
 ## :star: Description <span id="desc"></span>
 Quizzy is a quiz app where you can test your public knowledge in different fields like Geography, History, Movies, Music, and many more.
