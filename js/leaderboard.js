@@ -1,7 +1,4 @@
 const root = document.querySelector("#root");
-const accordion = document.createElement("div");
-accordion.className = "accordion";
-accordion.id = "leaderBoard";
 
 if (localStorage.leaderboard) {
   const leaderBoard = JSON.parse(localStorage.leaderboard);
