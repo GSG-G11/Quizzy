@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+@media (min-width: 567px) {
+  .container {
+    width: 550px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3rem;
+  color: #2b8ec7;
+}
+
+.leaderboard {
+  font-size: 1.4rem;
+  margin-block: 1.2rem;
+}
+.leaderboard a {
+  color: #4343bd;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.leaderboard a:hover {
+  color: #d34f4f;
+}
+.quiz {
+  font-size: 1.3rem;
+}
+.quiz .question-number {
+  margin-bottom: 10px;
+  display: block;
+}
+.quiz .question {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.quiz .answers {
+  margin-left: 25px;
+}
+.quiz .answers li {
+  transition: 0.3s;
+  border: 1px solid #4c4ce9;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.quiz .answers li::marker {
+  color: black;
+}
+.quiz .answers li.correct {
+  color: white;
+  background-color: #41c741;
+}
+.quiz .answers li.wrong {
+  color: white;
+  background-color: #e44a4a;
+}
+.quiz .btns {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.quiz .btns .next {
+  width: -webkit-max-content;
+  margin-left: auto;
+  display: block;
+  padding: 3px 20px;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  background-color: #06b306;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.quiz .btns .next.not-active {
+  cursor: no-drop;
+  background-color: gray;
+}
+.quiz .btns .board {
+  text-decoration: none;
+  background-color: #06b306;
+  padding: 3px 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.quiz .btns .board.active {
+  display: block;
+}
+.score-message {
+  font-size: 2rem;
+  text-align: center;
+}
+.score-message .player {
+  color: #0c8e0c;
+  font-weight: 600;
+}
+.score-message .score {
+  font-weight: 700;
+  color: #0c8e0c;
+  text-decoration: underline;
+}
